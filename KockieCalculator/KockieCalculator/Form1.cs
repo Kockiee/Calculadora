@@ -13,17 +13,7 @@ namespace KockieCalculator
         decimal result;
         private bool mouseDown;
         private Point lastLocation;
-
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn
-        (
-            int nLeftRect,    
-            int nTopRect,     
-            int nRightRect,   
-            int nBottomRect,  
-            int nWidthEllipse,
-            int nHeightEllipse
-        );
+        
         public Form1()
         {
             InitializeComponent();
